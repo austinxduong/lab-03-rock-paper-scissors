@@ -31,36 +31,40 @@ playButton.addEventListener('click', () => {
     const userChoice = selectedRadio.value
     console.log(userChoice);
 
-    //const weWon = didUserWin(playerChoice, alexa);
+    const result = didUserWin(userChoice, computerChoice);
 
-    if (winResults === 'win') {
+    results.textContent = result;
+
+    if (result === 'win') {
         wins++;
-        
+        winResults.textContent = wins;
     }
 
-   // if (loseResults === 'lose') {
-        //lose++;
-        
-    //}
+    if (result === 'lose') {
+        lose++;
+        loseResults.textContent = lose;
+        //add text.textContent
+    }
+ 
+    if (result === 'draw') {
+        draws++;
+        drawResults.textContent = draws;
+       //add text.textContent
+    }
 
-   // if (drawResults === 'draw') {
-        //draw++;
-       
-   // }
+    
     
 
 
     total ++;
     totalResults.textContent = total;
 
-    wins ++;
-    winResults.textContent = wins;
+   
 
-    lose ++;
-    loseResults.textContent = lose;
+   
 
-    draws ++;
-    drawResults.textContent = draws;
+    //draws ++;
+    //drawResults.textContent = draws;
 
 });
 
