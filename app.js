@@ -29,32 +29,42 @@ playButton.addEventListener('click', () => {
     const selectedRadio = document.querySelector('input:checked');
     //console.log(selectedRadio)
     const userChoice = selectedRadio.value
-    console.log(userChoice)
+    console.log(userChoice);
 
-    //const weWon = didUserWin(playerChoice, alexa);
+    const result = didUserWin(userChoice, computerChoice);
 
-    if (weWon === 'win') {
+    results.textContent = result;
+
+    if (result === 'win') {
         wins++;
-        //lose++;
-        //draw++
+        winResults.textContent = wins;
+    }
 
-    if (weWon == 'lose') {
+    if (result === 'lose') {
         lose++;
+        loseResults.textContent = lose;
+        //add text.textContent
+    }
+ 
+    if (result === 'draw') {
+        draws++;
+        drawResults.textContent = draws;
+       //add text.textContent
+    }
+
     
-    if (weWon === 'win') {
-        draw++;
-        
+    
 
 
+    total ++;
+    totalResults.textContent = total;
 
+   
 
-    //}
+   
 
-    //total ++;
-
-
-    //winsResults.textcontent = wins;
-   // totalResults.textContent = total;
+    //draws ++;
+    //drawResults.textContent = draws;
 
 });
 

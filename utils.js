@@ -16,17 +16,24 @@ export function getComputerThrow() {
 
 export function didUserWin(player, alexa) {
     if (player === 'rock' && alexa === 'paper'){
-        return 'lose';}
+        return 'lose';
+    }
     else if (player === 'rock' && alexa === 'scissors'){
-        return 'win';}
+        return 'win';
+    }
     else if (player === 'paper' && alexa === 'rock'){
-        return 'win';}
+        return 'win';
+    }
     else if (player === 'paper' && alexa === 'scissors'){
-        return 'lose';}
+        return 'lose';
+    }
     else if (player === 'scissors' && alexa === 'rock'){
-        return 'lose';}
+        return 'lose';
+    }
     else if (player === 'scissors' && alexa === 'paper'){
-        return 'win';}
-    else {return 'draw';}
+        return 'win';
+    }
+    else {return 'draw';
+    }
 
 }
