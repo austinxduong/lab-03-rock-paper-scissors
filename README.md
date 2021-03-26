@@ -27,8 +27,10 @@
     - button ID
     - radio button ID
 
-5. Create Even listeners 
-    - 
+5. Create Event listeners 
+    - import funtion
+    - add wins, lose, draw
+    - get text.content to show
 
 
 
