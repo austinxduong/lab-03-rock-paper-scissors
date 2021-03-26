@@ -34,14 +34,15 @@ playButton.addEventListener('click', () => {
     //const weWon = didUserWin(playerChoice, alexa);
 
     if (weWon === 'win') {
-        //wins++;
+        wins++;
         //lose++;
         //draw++
 
     if (weWon == 'lose') {
-        //lose++
+        lose++;
     
     if (weWon === 'win') {
+        draw++;
         
 
 
