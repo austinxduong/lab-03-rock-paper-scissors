@@ -7,3 +7,28 @@
 5) Is there some state we need to initialize?
 6) Find all the 'events' (user clicks, form submit, etc) in your app. Ask one by one, "What happens when" for each of these events.
 7) Think about how to validate each of your steps
+
+
+1. Create a layout 
+    - header 
+    - title 
+    - instructions (rock,paper,scissors)
+
+2. Create a button
+    - Play button
+    - needs ID
+    - in html
+
+3. Create a radio button
+    - needs ID
+    - html
+
+4. Carry DOM elements in HTML to app.js
+    - button ID
+    - radio button ID
+
+5. Create Even listeners 
+    - 
+
+
+
