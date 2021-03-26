@@ -1,5 +1,5 @@
 export function getComputerThrow() {
-    let randomNumber = Math.ceil(Math.random()) * 3;
+    let randomNumber = Math.ceil(Math.random() * 3);
     let alexa = '';
     if (randomNumber === 1) {
         alexa = 'rock';
@@ -10,7 +10,7 @@ export function getComputerThrow() {
     if (randomNumber === 3) {
         alexa = 'scissors';
     }
-
+    return alexa;
 }
 
 
